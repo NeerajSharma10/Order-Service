@@ -6,11 +6,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import com.njcoder.orderservice.dto.OrderLineItemsDto;
 import com.njcoder.orderservice.dto.OrderRequest;
 import com.njcoder.orderservice.model.Order;
-import com.njcoder.orderservice.model.OrderLineItems;
-import org.junit.Before;
-import org.junit.jupiter.api.AfterAll;
+import com.njcoder.orderservice.repository.OrderRepository;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,8 +43,9 @@ public class OrderServiceApplicationTests {
 		 dynamicPropertyRegistry.add("spring.datasource.password", mySQLContainer::getPassword);
 	 }
 
-	@Autowired
-	private OrderRepository orderRepository;
+	 @Autowired
+	 private OrderRepository orderRepository;
+
 
 	@Autowired
 	private MockMvc mockMvc;

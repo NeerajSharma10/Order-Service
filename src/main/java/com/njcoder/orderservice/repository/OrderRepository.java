@@ -1,4 +1,4 @@
-package com.njcoder.orderservice;
+package com.njcoder.orderservice.repository;
 
 import com.njcoder.orderservice.model.Order;
 import org.springframework.data.jpa.repository.JpaRepository;

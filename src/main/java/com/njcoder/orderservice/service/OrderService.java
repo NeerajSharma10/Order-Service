@@ -1,8 +1,7 @@
 package com.njcoder.orderservice.service;
 
-import com.njcoder.orderservice.OrderRepository;
-import com.njcoder.orderservice.dto.OrderLineItemsDto;
-import com.njcoder.orderservice.dto.OrderRequest;
+import com.njcoder.orderservice.repository.OrderRepository;
+import com.njcoder.orderservice.dto.*;
 import com.njcoder.orderservice.model.Order;
 import com.njcoder.orderservice.model.OrderLineItems;
 import lombok.RequiredArgsConstructor;
